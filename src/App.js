@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Nav, Landing, Info } from "./Components";
+import { Nav, Landing, Info, Cards } from "./Components";
 
 import './App.css';
 
@@ -12,6 +12,7 @@ function App() {
         <Nav />
         <Landing />
         <Info />
+        <Cards />
       </Router> 
     </div>
   );

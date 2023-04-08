@@ -12,7 +12,7 @@ const Info = () => {
         </div>
         <div className="col">
           <div className="col-text">
-            <h2>Column 1 Title</h2>
+            <h2>Title</h2>
             <p>
               Elliot’s Barbershop is determined to offer the traditional
               services of a classic barbershop. What makes us different is we
@@ -28,7 +28,7 @@ const Info = () => {
         </div>
         <div className="col">
           <div className="col-text">
-            <h2>Column 2 Title</h2>
+            <h2>Title</h2>
             <p>
               Relax in our chairs and experience a straight razor shave – this
               is 30 minute service, I’ll give you a super close clean shaven
