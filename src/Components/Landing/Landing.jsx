@@ -17,11 +17,9 @@ function Landing() {
           <button className="landing-page__button">Contact</button>
         </div>
       </div>
-      <div className="portrait-container">
         <div className="landing-page__portrait">
           <img src={main} alt="" className="main-img" />
         </div>
-      </div>
     </div>
   );
 }

@@ -22,10 +22,6 @@
   .landing-page__title-highlight {
     color: #ffc72d;
   }
-  
-  .portrait-container {
-    height: 70%;
-  }
 
   .landing-page__subtitle {
     font-size: 24px;
@@ -70,6 +66,28 @@
     height: 85%;
   }
   
+  @media (max-width: 1000px) {
+
+    .landing-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing-page__content {
+      padding: 100px 25px;
+      width: 100%;
+    }
+    
+    .landing-page__portrait {
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+        transform: scaleX(-1);
+      }  
+
+  }
+
+
   @media (max-width: 760px) {
     .landing-page {
         display: flex;
