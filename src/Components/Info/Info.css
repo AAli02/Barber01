@@ -62,6 +62,14 @@
   }
   @media (max-width: 480px) {
 
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+      }
+
     .col-img {
         width: 100%;
         height: auto;
