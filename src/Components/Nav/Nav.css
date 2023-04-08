@@ -1,0 +1,135 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 80%;
+    min-height: 80px;
+    background-color: #1B1B1B;
+    padding: 0 20px;
+  }
+  
+  .navbar__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .menu-btn {
+    display: none;
+  }
+  
+  .menu-btn__burger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    margin-top: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .menu-btn__burger::before {
+    transform: translateY(-8px);
+  }
+  
+  .menu-btn__burger::after {
+    transform: translateY(8px);
+  }
+  
+  .navbar__links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar__links li {
+    margin-right: 50px;
+  }
+  
+  .navbar__links a {
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar__links a:hover {
+    color: #fff;
+  }
+  
+  .navbar__links a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #FFC72D;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar__links a:hover::before {
+    width: 100%;
+    background-color: #FFC72D;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .menu-btn {
+      display: block;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+  
+    .menu-btn.open .menu-btn__burger {
+      background-color: transparent;
+    }
+  
+    .menu-btn.open .menu-btn__burger::before {
+      transform: translateY(0) rotate(45deg);
+    }
+  
+    .menu-btn.open .menu-btn__burger::after {
+      transform: translateY(0) rotate(-45deg);
+    }
+  
+    .navbar__links {
+      display: none;
+      margin-top: 20px;
+    }
+  
+    .navbar__links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .navbar__links a {
+      display: block;
+      padding: 10px;
+      background-color: #1B1B1B;
+      color: #fff;
+      border: 1px solid;
+    }
+  }
+  
