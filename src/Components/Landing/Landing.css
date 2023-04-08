@@ -109,7 +109,7 @@
   @media (max-width: 480px) {
     .landing-page__content {
       padding: 100px 25px;
-      width: 100%;
+      width: 80%;
     }
     
     .landing-page__title {
@@ -129,7 +129,7 @@
     }
     
     .main-img {
-      width: 100%;
+      width: 80%;
       height: auto;
     }
   }

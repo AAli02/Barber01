@@ -24,6 +24,9 @@ const Info = () => {
       </div>
       <div className="row">
         <div className="col">
+          <img src={img2} alt="img2" className="col-img" />
+        </div>
+        <div className="col">
           <div className="col-text">
             <h2>Column 2 Title</h2>
             <p>
@@ -33,9 +36,6 @@ const Info = () => {
               cream to leave the skin feeling like new.
             </p>
           </div>
-        </div>
-        <div className="col">
-          <img src={img2} alt="img2" className="col-img" />
         </div>
       </div>
     </div>
