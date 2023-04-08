@@ -23,6 +23,10 @@
     color: #ffc72d;
   }
   
+  .portrait-container {
+    height: 70%;
+  }
+
   .landing-page__subtitle {
     font-size: 24px;
     font-weight: bold;
